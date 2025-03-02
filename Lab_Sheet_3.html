@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Sheet 3</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        h2, h3, h4 
+        {
+            margin-bottom: 10px;
+        }
+        .grid-container 
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 50%;
+            margin: auto;
+        }
+        .grid-item 
+        {
+            background-color: #2ecc71;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .item1 
+        {
+            grid-column: span 3;
+        }
+        .container-2-2 
+        {
+            width: 60%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            gap: 5px;
+            background-color: #f8aeb1;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        .header, .footer div 
+        {
+            background-color: pink;
+            padding: 20px;
+            font-weight: bold;
+            border: 1px solid black;
+            
+        }
+        .landing 
+        {
+            background-color: pink;
+            padding: 40px;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+        .footer 
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+        .container-2-3 
+        {
+            width: 60%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            gap: 5px;
+            background-color: #f8aeb1;
+            padding: 20px;
+            border: 1px solid black;
+            
+
+        }
+        .content 
+        {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 5px;
+        }
+        .content div 
+        {
+            background-color: pink;
+            padding: 40px;
+            font-weight: bold;
+            border: 1px solid black;
+            
+        }
+
+        .container-2-4 
+        {
+            width: 70%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: auto auto;
+            gap: 5px;
+            background-color: #ADFF2F;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .header-2-4 
+        {
+            background-color: #ADFF2F; 
+            color: white;
+            padding: 20px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .content-2 
+        {
+            display: grid;
+            grid-template-columns: 2fr 1fr; 
+            gap: 5px;
+        }
+
+        .left 
+        {
+            background-color: #ADFF2F;
+            padding: 40px;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+        .right 
+        {
+            display: grid;
+            grid-template-rows: 1fr 1fr; 
+            gap: 5px;
+        }
+        .aside 
+        {
+            background-color: #ADFF2F;
+            padding: 20px;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+        .image-container 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box 
+        {
+            background-color: #4169E1;
+            width: 30%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+        }
+        img 
+        {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) 
+        {
+            .box 
+            {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <iframe src="https://www.pexels.com/search/beautiful/" name="my_area" width="400" height="400" scrolling="yes"></iframe>
+    <p>&copy; 2025 Amrita Viswavidyapeetham. All rights reserved.</p>
+    <h2>2.1</h2>
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+    </div>
+
+    <h2>2.2</h2>
+    <div class="container-2-2">
+        <div class="header">Header</div>
+        <div class="landing">Landing Page</div>
+        <div class="footer">
+            <div>About us</div>
+            <div>Vision</div>
+            <div>Contact us</div>
+        </div>
+    </div>
+
+    <h2>2.3</h2>
+    <div class="container-2-3">
+        <div class="header">Header</div>
+        <div class="content">
+            <div>Asidebar1</div>
+            <div>Main content</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <h2>2.4</h2>
+    <div class="container-2-4">
+    <div class="header-2-4">Header</div>
+    <div class="content-2">
+        <div class="left">Main Content</div>
+        <div class="right">
+            <div class="aside">Aside 1</div>
+            <div class="aside">Aside 2</div>
+        </div>
+    </div>
+</div>
+
+
+    <h3>3. Create a HTML page placing images inside the box using flex. Make the webpage responsive, when screen size reduces the images should be displayed in a row.</h3>
+    
+    <div class="image-container">
+        <div class="box"><img src="https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1"></div>
+        <div class="box"><img src="https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=612x612&w=0&k=20&c=UHeb1pGOw6ozr6utsenXHhV19vW6oiPIxDqhKCS2Llk=" alt="Image 2"></div>
+        <div class="box"><img src="https://st2.depositphotos.com/1591133/8812/i/450/depositphotos_88120646-stock-photo-idyllic-summer-landscape-with-clear.jpg" alt="Image 3"></div>
+    </div>
+
+</body>
+</html>
